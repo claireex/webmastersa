@@ -1,10 +1,3 @@
-function changeView() {
-  var signUpBox = document.getElementById("signupbox");
-  var signInBox = document.getElementById("signinbox");
-
-  signUpBox.classList.toggle("d-none");
-  signInBox.classList.toggle("d-none");
-}
 
 var bm;
 function forgotPassword() {
@@ -16,6 +9,16 @@ function forgotPassword() {
 function signIn() {
   window.location = "index.html";
 }
+
+
+function changeView(){
+  window.location="signUp.html";
+}
+
+function changeView2(){
+  window.location="signIn.html";
+}
+
 
 /* LOADING */
 
