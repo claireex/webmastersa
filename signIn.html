@@ -25,7 +25,7 @@
                 <div class="row">
                     <div class="col-12 logo"> </div>
                     <div class="col-12">
-                        <p class="text-center " style="font-family: Josefin Sans; font-size:30px; letter-spacing:3px;font-weight:bold; color: rgb(52, 53, 54); ">Taste, Defined by elegance</p>
+                        <p class="text-center " style="font-family: Josefin Sans; font-size:30px; letter-spacing:3px;font-weight:bold; color: rgb(255, 255, 255); ">Taste, Defined by elegance</p>
                     </div>
                 </div>
             </div>
@@ -39,72 +39,11 @@
                     <div class="col-3 d-none d-lg-block login_bg">
 
                     </div>
-                    <!--signup box-->
 
-                    <div class="col-12 col-lg-6 index-form-box " id="signupbox">
-                        <div class="row g-2">
-                            <div class="col-12 ">
-                                <p class="title02 fw-bold">Create New Account</p>
-                            </div>
-                            <div class="col-12 d-none" id="msgdiv">
-                                <div class="alert alert-danger " style="font-weight: bold;" role="alert" id="msg">
-
-                                </div>
-                            </div>
-
-                            <div class="col-6">
-                                <label class="form-label1 fw-bold">First Name</label>
-                                <input class="form-control" type="text" placeholder="ex: Aaron" id="fname" >
-                            </div>
-
-                            <div class="col-6">
-                                <label class="form-label1 fw-bold">Last Name</label>
-                                <input class="form-control" type="text" placeholder="ex: Warner" id="lname" >
-                            </div>
-
-                            <div class="col-12">
-                                <label class="form-label1 fw-bold">Email</label>
-                                <input class="form-control" type="email" placeholder="ex: aaronwarner@gmail.com" id="email" >
-                            </div>
-
-                            <div class="col-12">
-                                <label class="form-label1 fw-bold">Password</label>
-                                <input class="form-control" type="password" id="password" >
-                            </div>
-
-                            <div class="col-6">
-                                <label class="form-label1 fw-bold">Mobile</label>
-                                <input class="form-control" type="text" placeholder="ex: 0776567893" id="mobile" >
-                            </div>
-
-                            <div class="col-6">
-                                <label class="form-label1 fw-bold">Gender</label>
-                                <select class="form-control" id="gender">
-                                    <option value="0">Select your gender</option>
-
-                                   
-                                        <option value="1">Male</option>
-                                        <option value="1">Female</option>
-
-
-                                </select>
-                            </div>
-                            <div class="col-12 col-lg-6 d-grid">
-                                <button onclick="signIn();" class="btn btn-primary" >Sign Up</button>
-                            </div>
-
-                            <div class="col-12 col-lg-6 d-grid">
-                                <button class="btn btn-danger" onclick="changeView();">Already Have an Account? Sign In</button>
-                            </div>
-
-                        </div>
-
-                    </div>
-                    <!--signup box-->
-
+                    
                     <!--signin box-->
 
-                    <div class="col-12 col-lg-6 d-none index-form-box" style="height: 300px;" id="signinbox">
+                    <div class="col-12 col-lg-6 index-form-box" style="height: 300px;" >
                         <div class="row g-2">
                             <div class="col-12">
                                 <p class="title02">Sign In to your Account</p>
@@ -114,7 +53,7 @@
 
                             <div class="col-12">
                                 <label class="form-label1 fw-bold">Email</label>
-                                <input class="form-control" type="email" id="email2" value=""  placeholder="ex: aaronwarner@gmail.com">
+                                <input class="form-control" type="email" id="email2" value="info@example.com"  placeholder="ex: ">
 
 
                             </div>
@@ -138,12 +77,12 @@
 
                             <div class="col-12 col-lg-6 d-grid  ">
 
-                                <button onclick="signIn();" class=" btn btn-primary" >Sign In </button>
+                                <button onclick="signIn();" class=" btn btn-primary fw-bold" >Sign In </button>
 
                             </div>
 
                             <div class="col-12 col-lg-6 d-grid  ">
-                                <button class=" btn btn-danger" onclick="changeView();">Register Now</button>
+                                <button class=" btn btn-danger fw-bold" onclick="changeView();">Register Now</button>
 
                             </div>
 
@@ -159,72 +98,13 @@
 
 
                     <!--signin box-->
+
+
+ 
                 </div>
             </div>
             <!--content-->
-            <!--model-->
-
-            <div class="modal" tabindex="-1" id="forgotPasswordModal">>
-                <div class="modal-dialog">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <h5 class="modal-title">Forgot Password?</h5>
-                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                        </div>
-                        <div class="modal-body">
-                            <div class="row g-3">
-
-
-                                <div class="col-6">
-                                    <label class="form-label">New Password</label>
-                                    <div class="input-group mb-3">
-                                        <input type="password" class="form-control" id="np" >
-                                        <button class="btn btn-outline-secondary" type="button" id="npb" onclick="showPassword();"><i class="bi bi-eye-fill"></i></button>
-
-                                    </div>
-
-
-                                </div>
-                                <div class="col-6">
-                                    <label class="form-label">Retype New Password</label>
-                                    <div class="input-group mb-3">
-                                        <input type="password" class="form-control" id="rnp" >
-                                        <button class="btn btn-outline-secondary" type="button" id="rnbp" onclick="showPassword2();"><i class="bi bi-eye-fill"></i></button>
-
-                                    </div>
-
-                                </div>
-
-                                <div class="col-12">
-                                    <label class="form-label">Verification Code</label>
-                                    <input type="text" class="form-control" id="vc" >
-
-
-                                </div>
-
-
-
-                            </div>
-                            <div class="modal-footer">
-                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                                <button type="button" class="btn btn-primary" onclick="resetPassword();">Reset Password</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-
-
-
-
-
-
-
-                <!--model-->
-
-            </div>
-
-            <!--footer-->
+           
 
             <div class="col-12 d-none d-lg-block fixed-bottom">
                 <p class="text-center text-white">&copy;2024 inoka.lk ||  ALL Rights Reserved </p>
