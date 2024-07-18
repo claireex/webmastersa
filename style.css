@@ -1175,7 +1175,7 @@ a:focus {
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   margin-bottom: 20px;
-  /* height: 450px; */
+   height: 470px;
   overflow: hidden;
   border: 2px solid #000000; /* Initial border color */
   animation: border-animationHome3 10s infinite; /* Animation properties */
